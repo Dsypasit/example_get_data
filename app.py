@@ -22,7 +22,7 @@ def return_all():
 
 @app.route('/get_name/<name>')
 def get_name(name):
-    return jsonify(get_anime())
+    return jsonify(get_anime(name))
 
 
 if __name__ == '__main__':
