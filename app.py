@@ -16,10 +16,6 @@ def home():
 def api():
     return jsonify(test())
 
-@app.route('/get_all')
-def return_all():
-    return jsonify(get_all())
-
 @app.route('/get_name/<name>')
 def get_name(name):
     return jsonify(get_anime(name))
